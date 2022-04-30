@@ -1,76 +1,176 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 17, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
 function kata1() {
-    // implemente o código do kata 1 aqui
+    let numeros = []
+    for (let i = 1; i <= 25; i++) {
+        numeros.push(i)
+    }
+    return numeros
 }
+console.log(kata1())
 
 function kata2() {
-    // implemente o código do kata 2 aqui
+    let numeros = []
+    for (let i = 25; i > 0; i--) {
+        numeros.push(i)
+    }
+    return numeros
 }
+console.log(kata2())
 
 function kata3() {
-    // implemente o código do kata 3 aqui
+    let numeros = []
+    for (let i = -1; i >= -25; i--) {
+        numeros.push(i)
+    }
+    return numeros
 }
+console.log(kata3())
 
 function kata4() {
-    // implemente o código do kata 4 aqui
+    let numeros = []
+    for (let i = -25; i <= -1; i++) {
+        numeros.push(i)
+    }
+    return numeros
 }
+console.log(kata4())
 
 function kata5() {
-    // implemente o código do kata 5 aqui
+    let impares = []
+    for (let i = -25; i <= 25; i++) {
+        if (i % 2 !== 0) {
+            impares.push(i)
+        }
+    }
+    return impares
 }
+console.log(kata5())
 
 function kata6() {
-    // implemente o código do kata 6 aqui
+    let divisivel3 = []
+    for (let i = 0; i < 100; i++) {
+        if (i % 3 === 0) {
+            divisivel3.push(i)
+        }
+    }
+    return divisivel3
 }
+console.log(kata6())
 
 function kata7() {
-    // implemente o código do kata 7 aqui
+    let divisivel7 = []
+    for (let i = 0; i < 100; i++) {
+        if (i % 7 === 0) {
+            divisivel7.push(i)
+        }
+    }
+    return divisivel7
 }
+console.log(kata7())
 
 function kata8() {
-    // implemente o código do kata 8 aqui
+    let divisivel = []
+    for (let i = 100; i >= 0; i--) {
+        if (i % 3 === 0) {
+            divisivel.push(i)
+        }
+        if (i % 7 === 0) {
+            divisivel.push(i)
+        }
+    }
+    return divisivel
 }
+console.log(kata8())
 
 function kata9() {
-    // implemente o código do kata 9 aqui
+    let impares = []
+    for (let i = 5; i < 100; i++) {
+        if (i % 5 === 0 && i % 2 !== 0) {
+            impares.push(i)
+        }
+    }
+    return impares
 }
+console.log(kata9())
 
 function kata10() {
-    // implemente o código do kata 10 aqui
+    return sampleArray
 }
+console.log(kata10())
 
 function kata11() {
-    // implemente o código do kata 11 aqui
+    let resultado = []
+    for (let i = 0; i <= sampleArray.length; i++) {
+        if (sampleArray[i] % 2 === 0) {
+            resultado.push(sampleArray[i])
+        }
+    }
+    return resultado
 }
+console.log(kata11())
 
 function kata12() {
-    // implemente o código do kata 12 aqui
+    let resultado = []
+    for (let i = 0; i < sampleArray.length; i++) {
+        if (sampleArray[i] % 2 !== 0) {
+            resultado.push(sampleArray[i])
+        }
+    }
+    return resultado
 }
+console.log(kata12())
 
 function kata13() {
-    // implemente o código do kata 13 aqui
+    let resultado = []
+    for (let i = 0; i <= sampleArray.length; i++) {
+        if (sampleArray[i] % 8 === 0) {
+            resultado.push(sampleArray[i])
+        }
+    }
+    return resultado
 }
+console.log(kata13())
 
 function kata14() {
-    // implemente o código do kata 14 aqui
+
 }
+console.log(kata14())
 
 function kata15() {
-    // implemente o código do kata 15 aqui
+    let resultado = []
+    let result = 0
+    for (let i = 1; i <= 20; i++) {
+        resultado.push(i)
+    }
+    for (let i = 0; i < resultado.length; i++) {
+        result += resultado[i]
+    }
+
+    return result
 }
+console.log(kata15())
 
 function kata16() {
-    // implemente o código do kata 16 aqui
+    let soma = 0
+    for (let i = 0; i < sampleArray.length; i++) {
+        soma += sampleArray[i]
+    }
+    return soma
 }
+console.log(kata16())
 
 function kata17() {
-    // implemente o código do kata 17 aqui
+    let min = Math.min(...sampleArray)
+    return min
 }
+console.log(kata17())
 
 function kata18() {
-    // implemente o código do kata 18 aqui
+    let max = Math.max(...sampleArray)
+    return max
 }
+console.log(kata18())
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
