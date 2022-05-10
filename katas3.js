@@ -1,4 +1,4 @@
-const sampleArray = [469, 755, 244, 245, 758, 450, 302, 17, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+const sampleArray = [2, 469, 755, 244, 245, 758, 450, 302, 17, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
 function kata1() {
     let numeros = []
@@ -167,23 +167,27 @@ function kata16() {
 console.log(kata16())
 
 function kata17() {
-    let min = []
+
+    let min = sampleArray[0]
+
     for (let i = 0; i < sampleArray.length; i++) {
-        if (sampleArray[i] < sampleArray.length) {
-            min.push(sampleArray[i])
+        if (sampleArray[i] < min) {
+            min = sampleArray[i]
         }
     }
+
     return min
 }
 console.log(kata17())
 
 function kata18() {
-    let max = []
+    let max = 0
     for (let i = 0; i < sampleArray.length; i++) {
-        if (sampleArray[i] > sampleArray.length) {
-            max.push(sampleArray[i])
+        if (sampleArray[i] > max) {
+            max = sampleArray[i]
         }
     }
+
     return max
 }
 console.log(kata18())
