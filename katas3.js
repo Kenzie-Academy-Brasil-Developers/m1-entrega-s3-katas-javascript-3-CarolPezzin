@@ -49,7 +49,7 @@ console.log(kata5())
 
 function kata6() {
     let divisivel3 = []
-    for (let i = 0; i < 100; i++) {
+    for (let i = 3; i <= 99; i++) {
         if (i % 3 === 0) {
             divisivel3.push(i)
         }
@@ -60,7 +60,7 @@ console.log(kata6())
 
 function kata7() {
     let divisivel7 = []
-    for (let i = 0; i < 100; i++) {
+    for (let i = 7; i <= 98; i++) {
         if (i % 7 === 0) {
             divisivel7.push(i)
         }
@@ -71,7 +71,7 @@ console.log(kata7())
 
 function kata8() {
     let divisivel = []
-    for (let i = 100; i >= 0; i--) {
+    for (let i = 99; i >= 3; i--) {
         if (i % 3 === 0) {
             divisivel.push(i)
         }
@@ -133,7 +133,13 @@ function kata13() {
 console.log(kata13())
 
 function kata14() {
-
+    let resultado = []
+    for (let i = 0; i <= sampleArray.length; i++) {
+        if (sampleArray[i] ** 2) {
+            resultado.push(sampleArray[i])
+        }
+    }
+    return resultado
 }
 console.log(kata14())
 
@@ -161,13 +167,23 @@ function kata16() {
 console.log(kata16())
 
 function kata17() {
-    let min = Math.min(...sampleArray)
+    let min = []
+    for (let i = 0; i < sampleArray.length; i++) {
+        if (sampleArray[i] < sampleArray.length) {
+            min.push(sampleArray[i])
+        }
+    }
     return min
 }
 console.log(kata17())
 
 function kata18() {
-    let max = Math.max(...sampleArray)
+    let max = []
+    for (let i = 0; i < sampleArray.length; i++) {
+        if (sampleArray[i] > sampleArray.length) {
+            max.push(sampleArray[i])
+        }
+    }
     return max
 }
 console.log(kata18())
